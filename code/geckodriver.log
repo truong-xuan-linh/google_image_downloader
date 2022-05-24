@@ -535,3 +535,5 @@ Read port:
 1652085491790	geckodriver::browser	WARN	Failed fo convert  to u16
 Read port: 49272
 1652085491916	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653374485692	geckodriver	INFO	Listening on 127.0.0.1:56717
+1653374514708	geckodriver	INFO	Listening on 127.0.0.1:52399
