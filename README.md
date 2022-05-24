@@ -5,6 +5,7 @@
 **1. Install requirements**
 
 ```
+cd ./image-cralw-exe
 pip install -r requirements.txt
 ```
 
