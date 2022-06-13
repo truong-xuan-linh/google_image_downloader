@@ -1,20 +1,22 @@
 import os
-import requests
 import matplotlib.pyplot as plt
+from urllib.request import Request, urlopen
+from PIL import Image
+import numpy as np
 
 def download_images(save_dir,name, urls):
   start_index = 0
   image_names = []
   i = 0
+  len_img = len(os.listdir(save_dir))
   while i < len(urls):
     try:
-        image_name = f'{name}_{str(i)}.jpg'
+        image_name = f'{name}_{str(i+len_img)}.jpg'
         image_path = os.path.join(save_dir, image_name)
-        result = requests.get(urls[i], timeout=60)
-
-        with open(image_path, 'wb') as f:
-            f.write(result.content)
-            f.close()
+        req = Request(urls[i], headers={'User-Agent': 'Mozilla/5.0'})
+        webpage = urlopen(req)
+        img = Image.open(webpage)
+        img.save(image_path)
         try:
             plt.imread(image_path)
             image_names.append(image_name)

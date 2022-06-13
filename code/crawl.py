@@ -50,6 +50,10 @@ else:
         save_dir = f.read()
     save_dir = st.text_input('Folder lưu:', save_dir)
 # save_dir = st.text_input('Vui lòng nhập đường dẫn lưu:', "")
+##SlIDE
+num_show = st.slider(
+     "Choose max number of images that you want to show", 0, 1000, 150)
+###
 city_col, popular_col, keyword_col = st.columns(3)
 city = city_col.text_input('Tên thành phố')
 popular = popular_col.text_input("Tên địa điểm")
@@ -58,11 +62,12 @@ keyword = keyword_col.text_input("Từ khóa tìm kiếm")
 with open("./checkboxes.pkl", "rb") as f:
     checkbox = pickle.load(f)
 
-col = st.columns(2)
+col = st.columns(3)
 check = 0
 if col[0].button("Tìm kiếm"):
     k = 0
-    urls = getURLs(keyword)[:150]
+    urls = getURLs(keyword)[:num_show]
+    print(len(urls))
     with open("./checkboxes.pkl", "wb") as f:
         pickle.dump([], f)
     with open("./urls.pkl", "wb") as fp:
@@ -73,18 +78,20 @@ if col[0].button("Tìm kiếm"):
 def change():
     with open("./checkboxes.pkl", "wb") as f:
         pickle.dump(checkbox,f)
+
+
 if col[1].button("Lưu"):
     city_name = "-".join(unidecode.unidecode(city).split(" "))
     popular_name = "-".join(unidecode.unidecode(popular).split(" "))
     urls_final = []
 
-    print(checkbox)
     for i in range(len(checkbox)):
         if checkbox[i] == True:
             urls_final.append(urls[i])
     download_images(save_dir, city_name + "_" + popular_name, urls_final)
-    
+
 checkbox = [False]*len(urls)
+
 
 
 
@@ -98,3 +105,10 @@ for image_index, url in enumerate(urls):
     
     columns2[k].image(url)
     k=k+1
+
+######
+
+if col[2].button("Chọn tất cả"):
+    checkbox = [True]*len(urls)  
+    
+######

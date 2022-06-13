@@ -23,7 +23,7 @@ driver = webdriver.Firefox(executable_path= PATH, options= options)
 def getURLs(location_name):
     driver.get("https://www.google.com/search?q=" + location_name + "&source=lnms&tbm=isch") 
 
-    SCROLL_PAUSE_TIME = 0.5
+    SCROLL_PAUSE_TIME = 1.5
 
     # Get scroll height
     last_height = driver.execute_script("return document.body.scrollHeight")
