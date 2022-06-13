@@ -106,9 +106,9 @@ for image_index, url in enumerate(urls):
     columns2[k].image(url)
     k=k+1
 
-######
+# ######
 
-if col[2].button("Chọn tất cả"):
-    checkbox = [True]*len(urls)  
+# if col[2].button("Chọn tất cả"):
+#     checkbox = [True]*len(urls)  
     
-######
+# ######

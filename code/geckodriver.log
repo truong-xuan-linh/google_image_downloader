@@ -919,3 +919,26 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:64134/devtools/browser/46315b79-c4fd-45b6-ba62-ea56daedc831
 Read port: 64153
 1655084885805	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655105756959	geckodriver	INFO	Listening on 127.0.0.1:54890
+1655105760048	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--no-sandbox" "--disable-dev-shm-usage" "--remote-debugging-port" "54891" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileYdMsSr"
+*** You are running in headless mode.
+1655105760643	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54891
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileYdMsSr\\search.json.mozlz4", (void 0)))
+1655105761805	Marionette	INFO	Listening on port 54910
+Read port: 54910
+1655105761866	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:54891/devtools/browser/46a70cc7-9cc2-4eee-a03f-c5ff65693844
+1655106150500	geckodriver	INFO	Listening on 127.0.0.1:51135
+1655106153568	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--no-sandbox" "--disable-dev-shm-usage" "--remote-debugging-port" "51136" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileKVYsKO"
+*** You are running in headless mode.
+1655106153946	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:51136
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileKVYsKO\\search.json.mozlz4", (void 0)))
+1655106154933	Marionette	INFO	Listening on port 51157
+DevTools listening on ws://localhost:51136/devtools/browser/86637273-3dd7-4867-a149-fab74be8def8
+Read port: 51157
+1655106155034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655106502269	geckodriver	INFO	Listening on 127.0.0.1:50893
