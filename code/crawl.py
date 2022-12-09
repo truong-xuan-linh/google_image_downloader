@@ -6,7 +6,7 @@ import pickle
 import tkinter as tk
 from tkinter import filedialog
 
-st.set_page_config(page_title="Image Cralw", layout="wide")
+st.set_page_config(page_title="Image Crawl", layout="wide")
 hide_menu_style = """
 <style>
 footer {visibility: hidden;}
@@ -55,8 +55,8 @@ num_show = st.slider(
      "Choose max number of images that you want to show", 0, 1000, 150)
 ###
 city_col, popular_col, keyword_col = st.columns(3)
-city = city_col.text_input('Tên thành phố')
-popular = popular_col.text_input("Tên địa điểm")
+city = city_col.text_input('Tên lưu 1')
+popular = popular_col.text_input("Tên lưu 2")
 keyword = keyword_col.text_input("Từ khóa tìm kiếm")
 
 with open("./checkboxes.pkl", "rb") as f:

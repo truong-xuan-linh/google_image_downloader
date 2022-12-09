@@ -942,3 +942,25 @@ DevTools listening on ws://localhost:51136/devtools/browser/86637273-3dd7-4867-a
 Read port: 51157
 1655106155034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1655106502269	geckodriver	INFO	Listening on 127.0.0.1:50893
+1670567389882	geckodriver	INFO	Listening on 127.0.0.1:60047
+1670567392953	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--no-sandbox" "--disable-dev-shm-usage" "--remote-debugging-port" "60048" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileAaQRLO"
+*** You are running in headless mode.
+1670567393836	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:60048
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileAaQRLO\\search.json.mozlz4", (void 0)))
+1670567395858	Marionette	INFO	Listening on port 60069
+Read port: 60069
+DevTools listening on ws://localhost:60048/devtools/browser/546d6d4a-ffd1-4314-b539-0a9ad9b40fce
+1670567395900	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1670567512052	geckodriver	INFO	Listening on 127.0.0.1:60243
+1670567515086	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--no-sandbox" "--disable-dev-shm-usage" "--remote-debugging-port" "60244" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileiddRG7"
+*** You are running in headless mode.
+1670567515722	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:60244
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\asus\\AppData\\Local\\Temp\\rust_mozprofileiddRG7\\search.json.mozlz4", (void 0)))
+1670567517841	Marionette	INFO	Listening on port 60265
+DevTools listening on ws://localhost:60244/devtools/browser/15d90f76-a0b4-4924-abaf-ee995cfffc01
+Read port: 60265
+1670567517964	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
